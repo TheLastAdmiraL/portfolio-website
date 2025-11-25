@@ -1,26 +1,4 @@
-'use client';
-
-import { useState } from 'react';
-
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission
-    console.log('Form submitted:', formData);
-  };
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
 
   const contactInfo = [
     {
@@ -69,118 +47,53 @@ export default function Contact() {
           Get In Touch
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
           {/* Contact Info */}
-          <div className="space-y-6">
-            <div className="glass p-8 rounded-xl glow-blue-sm">
-              <h3 className="text-2xl font-bold font-[var(--font-space-grotesk)] text-cyan-400 mb-6">
-                Contact Information
-              </h3>
-              <div className="space-y-4">
-                {contactInfo.map((info, index) => (
-                  <div key={index} className="flex items-start space-x-3">
-                    <span className="text-2xl">{info.icon}</span>
-                    <div>
-                      <p className="text-slate-400 text-sm">{info.label}</p>
-                      {info.link ? (
-                        <a
-                          href={info.link}
-                          className="text-slate-200 hover:text-cyan-400 transition-colors"
-                        >
-                          {info.value}
-                        </a>
-                      ) : (
-                        <p className="text-slate-200">{info.value}</p>
-                      )}
-                    </div>
+          <div className="glass p-8 rounded-xl glow-blue-sm">
+            <h3 className="text-2xl font-bold font-[var(--font-space-grotesk)] text-cyan-400 mb-6">
+              Contact Information
+            </h3>
+            <div className="space-y-4">
+              {contactInfo.map((info, index) => (
+                <div key={index} className="flex items-start space-x-3">
+                  <span className="text-2xl">{info.icon}</span>
+                  <div>
+                    <p className="text-slate-400 text-sm">{info.label}</p>
+                    {info.link ? (
+                      <a
+                        href={info.link}
+                        className="text-slate-200 hover:text-cyan-400 transition-colors"
+                      >
+                        {info.value}
+                      </a>
+                    ) : (
+                      <p className="text-slate-200">{info.value}</p>
+                    )}
                   </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Social Links */}
-            <div className="glass p-8 rounded-xl glow-purple">
-              <h3 className="text-2xl font-bold font-[var(--font-space-grotesk)] text-purple-400 mb-6">
-                Connect With Me
-              </h3>
-              <div className="flex space-x-4">
-                {socialLinks.map((social, index) => (
-                  <a
-                    key={index}
-                    href={social.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-3 bg-slate-800/60 border border-purple-400/30 text-purple-400 rounded-lg hover:bg-purple-400/10 hover:border-purple-400 hover:scale-110 transition-all duration-300"
-                    title={social.name}
-                  >
-                    {social.icon}
-                  </a>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
           </div>
 
-          {/* Contact Form */}
-          <div className="glass p-8 rounded-xl glow-blue-sm">
-            <h3 className="text-2xl font-bold font-[var(--font-space-grotesk)] text-cyan-400 mb-6">
-              Send a Message
+          {/* Social Links */}
+          <div className="glass p-8 rounded-xl glow-purple">
+            <h3 className="text-2xl font-bold font-[var(--font-space-grotesk)] text-purple-400 mb-6">
+              Connect With Me
             </h3>
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div>
-                <label htmlFor="name" className="block text-slate-300 text-sm mb-2">
-                  Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 bg-slate-800/60 border border-cyan-400/30 rounded-lg text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-all"
-                  placeholder="Your name"
-                  required
-                />
-              </div>
-
-              <div>
-                <label htmlFor="email" className="block text-slate-300 text-sm mb-2">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 bg-slate-800/60 border border-cyan-400/30 rounded-lg text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-all"
-                  placeholder="your.email@example.com"
-                  required
-                />
-              </div>
-
-              <div>
-                <label htmlFor="message" className="block text-slate-300 text-sm mb-2">
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  rows="5"
-                  className="w-full px-4 py-3 bg-slate-800/60 border border-cyan-400/30 rounded-lg text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-all resize-none"
-                  placeholder="Your message..."
-                  required
-                ></textarea>
-              </div>
-
-              <button
-                type="submit"
-                className="w-full px-8 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-semibold rounded-lg hover:from-cyan-400 hover:to-blue-400 transition-all duration-300 glow-blue-sm hover:scale-105"
-              >
-                Send Message
-              </button>
-            </form>
+            <div className="flex space-x-4">
+              {socialLinks.map((social, index) => (
+                <a
+                  key={index}
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 bg-slate-800/60 border border-purple-400/30 text-purple-400 rounded-lg hover:bg-purple-400/10 hover:border-purple-400 hover:scale-110 transition-all duration-300"
+                  title={social.name}
+                >
+                  {social.icon}
+                </a>
+              ))}
+            </div>
           </div>
         </div>
       </div>
