@@ -22,7 +22,7 @@ export default function Hero() {
             <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
             <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-cyan-400/30 glow-blue">
               <Image
-                src="/profile.png"
+                src="/portfolio-website/profile.png"
                 alt="Amogh H"
                 fill
                 className="object-cover object-[center_20%]"
@@ -60,7 +60,7 @@ export default function Hero() {
               View Projects
             </button>
             <a
-              href="/resume.pdf"
+              href="/portfolio-website/resume.pdf"
               download="Amogh_H_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
