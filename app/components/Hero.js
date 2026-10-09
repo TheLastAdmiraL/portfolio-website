@@ -66,7 +66,7 @@ export default function Hero() {
               Explore Field Profile
             </button>
             <a
-              href={`${basePath}/resume.pdf`}
+              href={`${basePath}/Amogh_H_Embedded_Field_Engineer_Resume.pdf`}
               download="Amogh_H_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
