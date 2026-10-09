@@ -1,6 +1,6 @@
-# 🚀 Amogh H - Portfolio Website
+# Amogh H — Embedded Systems & Field Engineering Portfolio
 
-A futuristic, dark-themed portfolio website showcasing my work as a **Full-Stack Mobile, AI & Embedded Systems Engineer**. Built with Next.js, React, and Tailwind CSS, featuring a holographic blue interface with glassmorphism effects.
+A field-focused portfolio showcasing my Basic Mountaineering Course qualification, embedded systems experience, electronics internships, and selected technical projects.
 
 🌐 **Live Site:** [https://thelastadmiral.github.io/portfolio-website/](https://thelastadmiral.github.io/portfolio-website/)
 
@@ -8,7 +8,7 @@ A futuristic, dark-themed portfolio website showcasing my work as a **Full-Stack
 
 ## 👨‍💻 About Me
 
-I'm a versatile engineer who bridges the gap between **artificial intelligence**, **mobile development**, and **embedded systems**. My expertise spans from building intelligent computer vision pipelines to deploying production-ready applications used by thousands of users.
+I am an ECE graduate and BMC-qualified embedded systems engineer with hands-on experience in firmware, sensor integration, PCB debugging, hardware-software integration, and field-ready operations.
 
 ### 🔧 Core Competencies
 
@@ -60,7 +60,7 @@ Embedded system measuring temperature, humidity, and air quality in real-time wi
 ## 💼 Work Experience
 
 ### Embedded & Mobile Software Intern @ Genius Industrial Services
-**Sep 2025 – Present** | Mysore, Karnataka | Hybrid
+**Sep 2025 – Jan 2026** | Mysuru, Karnataka | Hybrid
 
 - Developed Flutter app with BLE GATT for real-time heater control and sensor monitoring
 - Built ESP32 firmware with WiFi, DS18B20 sensing, and relay-based control
@@ -145,7 +145,7 @@ This site is automatically deployed to GitHub Pages via GitHub Actions on every 
 
 ## 📄 License
 
-© 2025 Amogh H. All rights reserved.
+© 2026 Amogh H. All rights reserved.
 
 ---
 

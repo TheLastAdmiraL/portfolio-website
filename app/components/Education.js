@@ -2,6 +2,7 @@ export default function Education() {
   return (
     <section id="education" className="py-20 px-4">
       <div className="max-w-6xl mx-auto">
+        <p className="mb-3 text-center text-sm font-bold uppercase tracking-[0.28em] text-cyan-300">Academic foundation</p>
         <h2 className="text-4xl md:text-5xl font-bold font-[var(--font-space-grotesk)] text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">
           Education
         </h2>
@@ -20,7 +21,7 @@ export default function Education() {
               <div className="text-slate-400 text-sm md:text-right">
                 <p className="flex items-center md:justify-end">
                   <span className="mr-2">📅</span>
-                  2022 – 2026 (June)
+                  2022 – June 2026
                 </p>
               </div>
             </div>
@@ -29,7 +30,7 @@ export default function Education() {
               <div className="flex items-center space-x-2 text-slate-300">
                 <span className="text-2xl">🎓</span>
                 <p className="text-sm">
-                  Pursuing a comprehensive degree in Electronics & Communication with focus on embedded systems, signal processing, and communication technologies.
+                  Graduate in Electronics and Communication Engineering with a focus on embedded systems, electronics, signal processing, and communication technologies.
                 </p>
               </div>
             </div>

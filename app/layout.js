@@ -13,8 +13,8 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Amogh H | Full-Stack Mobile, AI & Embedded Systems Engineer",
-  description: "Building intelligent systems at the intersection of AI, mobile, and embedded hardware.",
+  title: "Amogh H | Embedded Systems & Field Engineer",
+  description: "BMC-qualified ECE graduate with hands-on experience in embedded systems, field engineering, firmware, sensors, and hardware-software integration.",
 };
 
 export default function RootLayout({ children }) {

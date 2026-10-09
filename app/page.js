@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import FieldTraining from './components/FieldTraining';
 import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
@@ -13,10 +14,11 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <About />
-        <Skills />
-        <Projects />
+        <FieldTraining />
         <Experience />
+        <Projects />
+        <Skills />
+        <About />
         <Education />
         <Contact />
       </main>

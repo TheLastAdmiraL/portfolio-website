@@ -1,33 +1,33 @@
 export default function About() {
   const strengths = [
-    'Rapid prototyping & problem solving',
-    'Strong debugging ability (firmware & software)',
-    'End-to-end product development',
-    'Clean architecture & scalable design',
-    'Self-driven, fast learner, execution-focused',
+    'Field deployment and remote-site readiness',
+    'Hands-on hardware and firmware troubleshooting',
+    'Sensor integration, testing, and system debugging',
+    'Cross-functional engineering teamwork',
+    'Systematic fault diagnosis and documentation',
   ];
 
   return (
     <section id="about" className="py-20 px-4">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold font-[var(--font-space-grotesk)] text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">
-          About Me
+          Engineering Profile
         </h2>
 
         <div className="grid md:grid-cols-3 gap-8">
           {/* Main About Card */}
           <div className="md:col-span-2 glass p-8 rounded-xl glow-blue-sm glass-hover space-y-4">
             <p className="text-lg text-slate-300 leading-relaxed">
-              I'm a versatile engineer who bridges the gap between <span className="text-cyan-400 font-semibold">artificial intelligence</span>, <span className="text-cyan-400 font-semibold">mobile development</span>, and <span className="text-cyan-400 font-semibold">embedded systems</span>. My expertise spans from building intelligent computer vision pipelines to deploying production-ready applications used by thousands of users.
+              I am an Electronics and Communication Engineering graduate focused on <span className="text-cyan-400 font-semibold">embedded systems, field engineering, and real-world hardware</span>. I have developed and tested systems using ESP32, LPC1768, BLE, Wi-Fi, relays, and environmental sensors.
             </p>
             <p className="text-base text-slate-300 leading-relaxed">
-              In <span className="text-cyan-400 font-semibold">AI & Computer Vision</span>, I've developed real-time detection and tracking systems using YOLOv5/v8, DeepSORT, and MediaPipe, implementing multi-object tracking with stable ID association and behavior classification. I work extensively with PyTorch for inference optimization and OpenCV for advanced image processing.
+              At Genius Industrial Services and 3ZERO, I worked across <span className="text-cyan-400 font-semibold">electronics, firmware, sensors, actuators, PCB debugging, and system integration</span>, diagnosing issues on physical prototypes and supporting functional testing.
             </p>
             <p className="text-base text-slate-300 leading-relaxed">
-              On the <span className="text-cyan-400 font-semibold">mobile front</span>, I've published apps on the Play Store using Kotlin with Jetpack Compose and Flutter, integrating Firebase services (Auth, Firestore, Analytics, AdMob) for full-stack solutions. I build cross-platform applications with responsive web counterparts using Next.js.
+              Completing the Basic Mountaineering Course developed my ability to work with discipline in physically demanding, remote environments. I am open to relocation, extensive field travel, equipment setup, and on-site troubleshooting.
             </p>
             <p className="text-base text-slate-300 leading-relaxed">
-              In <span className="text-cyan-400 font-semibold">embedded systems</span>, I design and program microcontroller-based solutions with ESP32, Arduino, and ARM Cortex-M3 platforms. I handle sensor interfacing (DHT22, MQ135, DS18B20), wireless communication (BLE GATT, WiFi), ADC/UART protocols, and firmware development for industrial IoT applications.
+              I am especially interested in <span className="text-cyan-400 font-semibold">defence, UAVs, autonomous systems, surveillance, and mission-critical field engineering</span>, where reliable hardware-software integration matters under real operating constraints.
             </p>
           </div>
 

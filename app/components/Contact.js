@@ -12,6 +12,11 @@ export default function Contact() {
       value: 'Mysuru, Karnataka, India',
     },
     {
+      icon: '🧭',
+      label: 'Availability',
+      value: 'Open to relocation and extensive field travel',
+    },
+    {
       icon: '📧',
       label: 'Email',
       value: 'amogh.harsha2501@gmail.com',
@@ -44,7 +49,7 @@ export default function Contact() {
     <section id="contact" className="py-20 px-4 bg-slate-900/30">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold font-[var(--font-space-grotesk)] text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">
-          Get In Touch
+          Ready for the Field
         </h2>
 
         <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
@@ -101,7 +106,7 @@ export default function Contact() {
       {/* Footer */}
       <div className="mt-16 pt-8 border-t border-slate-800 text-center">
         <p className="text-slate-400 text-sm">
-          © 2025 Amogh H. Built with Next.js & Tailwind CSS
+          © 2026 Amogh H. Built with Next.js & Tailwind CSS
         </p>
       </div>
     </section>

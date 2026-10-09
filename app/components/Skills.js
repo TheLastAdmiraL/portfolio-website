@@ -1,67 +1,58 @@
-export default function Skills() {
-  const skillCategories = [
-    {
-      title: 'Languages',
-      icon: '💻',
-      skills: ['Python', 'C/C++', 'Kotlin', 'Dart', 'JavaScript', 'Embedded C', 'Java'],
-    },
-    {
-      title: 'Frameworks',
-      icon: '🛠️',
-      skills: ['OpenCV', 'PyTorch (inference)', 'MediaPipe', 'Flask', 'Streamlit', 'Next.js', 'Flutter', 'Jetpack Compose'],
-    },
-    {
-      title: 'AI & CV Tools',
-      icon: '🤖',
-      skills: ['YOLOv5/YOLOv8', 'OpenCV DNN', 'DeepSORT', 'NumPy', 'Pandas', 'Matplotlib'],
-    },
-    {
-      title: 'Mobile & Cloud',
-      icon: '📱',
-      skills: ['Firebase (Auth, Firestore, Analytics, AdMob)', 'Jetpack Compose'],
-    },
-    {
-      title: 'Embedded & Hardware',
-      icon: '⚡',
-      skills: ['ESP32', 'Arduino', 'LPC1768 (ARM Cortex-M3)', 'Sensors (DHT22, MQ135, DS18B20)', 'BLE GATT'],
-    },
-    {
-      title: 'Tools',
-      icon: '🔧',
-      skills: ['Git', 'Figma', 'Blender', 'Jupyter/Colab'],
-    },
-  ];
+const skillCategories = [
+  {
+    title: 'Embedded Systems',
+    eyebrow: 'Core',
+    skills: ['ESP32', 'LPC1768 ARM Cortex-M3', 'Arduino', 'Embedded C/C++', 'Firmware Development', 'PCB Debugging'],
+  },
+  {
+    title: 'Sensors & Interfaces',
+    eyebrow: 'Hardware',
+    skills: ['DHT22', 'MQ135', 'DS18B20', 'Water-Level Sensors', 'ADC', 'UART', 'BLE GATT', 'Wi-Fi', 'Relays'],
+  },
+  {
+    title: 'System Development',
+    eyebrow: 'Field',
+    skills: ['Hardware-Software Integration', 'Prototyping', 'Testing', 'Fault Diagnosis', 'Actuator Control', 'Technical Documentation'],
+  },
+  {
+    title: 'Programming',
+    eyebrow: 'Languages',
+    skills: ['C/C++', 'Embedded C', 'Python', 'Kotlin', 'Dart', 'JavaScript'],
+  },
+  {
+    title: 'AI & Computer Vision',
+    eyebrow: 'Surveillance',
+    skills: ['YOLOv5/v8', 'OpenCV', 'DeepSORT', 'MediaPipe', 'PyTorch Inference'],
+  },
+  {
+    title: 'Software',
+    eyebrow: 'Supporting',
+    skills: ['Flutter', 'Jetpack Compose', 'Firebase', 'Git', 'APIs'],
+  },
+];
 
+export default function Skills() {
   return (
-    <section id="skills" className="py-20 px-4 bg-slate-900/30">
+    <section id="skills" className="py-24 px-4">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold font-[var(--font-space-grotesk)] text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">
-          Skills
-        </h2>
+        <div className="mb-12 text-center">
+          <p className="mb-3 text-sm font-bold uppercase tracking-[0.28em] text-cyan-300">Technical toolkit</p>
+          <h2 className="text-4xl md:text-5xl font-bold font-[var(--font-space-grotesk)] text-white">Capabilities</h2>
+        </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((category, index) => (
-            <div
-              key={index}
-              className="glass p-6 rounded-xl glow-blue-sm glass-hover"
-            >
-              <div className="flex items-center space-x-3 mb-4">
-                <span className="text-3xl">{category.icon}</span>
-                <h3 className="text-xl font-bold font-[var(--font-space-grotesk)] text-cyan-400">
-                  {category.title}
-                </h3>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {category.skills.map((skill, skillIndex) => (
-                  <span
-                    key={skillIndex}
-                    className="px-3 py-1.5 bg-slate-800/60 border border-cyan-400/30 text-slate-300 text-sm rounded-full hover:bg-cyan-400/10 hover:border-cyan-400 transition-all duration-200"
-                  >
+            <article key={category.title} className={`rounded-2xl p-6 glass glass-hover ${index < 3 ? 'border-cyan-400/40' : ''}`}>
+              <p className="text-xs font-bold uppercase tracking-[0.2em] text-cyan-300">{category.eyebrow}</p>
+              <h3 className="mt-2 text-xl font-bold text-white">{category.title}</h3>
+              <div className="mt-5 flex flex-wrap gap-2">
+                {category.skills.map((skill) => (
+                  <span key={skill} className="rounded-full border border-slate-700 bg-slate-900/80 px-3 py-1.5 text-sm text-slate-300">
                     {skill}
                   </span>
                 ))}
               </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>

@@ -5,8 +5,8 @@ import Image from 'next/image';
 export default function Hero() {
   const basePath = process.env.NODE_ENV === 'production' ? '/portfolio-website' : '';
   
-  const scrollToProjects = () => {
-    document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+  const scrollToBmc = () => {
+    document.getElementById('field-training')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -36,30 +36,34 @@ export default function Hero() {
 
         {/* Text Content */}
         <div className="text-center md:text-left space-y-6">
+          <div className="inline-flex items-center gap-2 rounded-full border border-amber-300/40 bg-amber-300/10 px-4 py-2 text-sm font-semibold text-amber-200">
+            <span aria-hidden="true">▲</span>
+            BMC Qualified · ABVIMAS · September 2026
+          </div>
           <div className="space-y-3">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold font-[var(--font-space-grotesk)] text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-cyan-200 pb-2">
               Amogh H
             </h1>
             <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold text-slate-300">
-              Full-Stack Mobile, AI & Embedded Systems Engineer
+              Embedded Systems & Field Engineer
             </h2>
           </div>
 
           <div className="space-y-4 max-w-xl">
             <p className="text-lg md:text-xl text-slate-400">
-              Building intelligent systems at the intersection of AI, mobile, and embedded hardware.
+              ECE graduate combining hands-on electronics work with the resilience and discipline to operate in demanding field environments.
             </p>
             <p className="text-base md:text-lg text-slate-400 leading-relaxed">
-              I specialize in developing <span className="text-cyan-400 font-semibold">real-time computer vision systems</span> with YOLO and DeepSORT, crafting <span className="text-cyan-400 font-semibold">production-ready mobile applications</span> with Kotlin and Flutter, and building <span className="text-cyan-400 font-semibold">robust embedded solutions</span> for IoT and industrial applications. From concept to deployment, I deliver scalable, intelligent systems that solve real-world problems.
+              I build and troubleshoot <span className="text-cyan-400 font-semibold">embedded and connected systems</span> across sensors, firmware, communication, and mobile interfaces. My Basic Mountaineering Course training strengthens my readiness for <span className="text-cyan-400 font-semibold">remote deployments, extensive travel, and mission-focused field work</span>.
             </p>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4">
             <button
-              onClick={scrollToProjects}
+              onClick={scrollToBmc}
               className="px-8 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-semibold rounded-lg hover:from-cyan-400 hover:to-blue-400 transition-all duration-300 glow-blue-sm hover:scale-105"
             >
-              View Projects
+              Explore Field Profile
             </button>
             <a
               href={`${basePath}/resume.pdf`}
